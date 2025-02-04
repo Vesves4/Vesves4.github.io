@@ -26,20 +26,20 @@
         </nav>
         
         <div id="main">
-            <section id="one" class="inner">
-                <header class="major">
-                    <h2>Enterprise DevOps</h2>
-                </header>
-            </section>
 
             <section id="two" class="inner">
                 <header class="major">
-                    <h3>Managing large-scale GitHub Server</h3>
+                    <h3>Web servers and Reverse proxies</h3>
                 </header>
-                <p>My most significant project involved managing a GitHub Enterprise Server (GHES) hosted in Azure. The setup included two replicas, supporting over 1,100 repositories and more than 1,000 active developers spread across 10 organizations.</br></br>
-                Regular maintenance was critical, requiring frequent updates and security patches. Since our GHES instance was lagging behind a major version, we had to carefully upgrade it in incremental steps—applying 2-3 minor version updates at a time to mitigate the risk of breaking changes. To minimize disruption, all updates were executed over the weekend, ensuring developers experienced no downtime during work hours.</br></br>
-                Additionally, we undertook a large-scale migration of GHES to the cloud. This complex transition involved moving all repositories, developer accounts, and organizational structures while ensuring a seamless experience for users. Extensive planning and execution were key to making this migration smooth and efficient.
-                </p>
+                <p>Here's a breakdown of my experience with web servers and reverse proxies:</br>
+                    <h4>Nginx</h4>
+                    Nginx has been my go-to for setting up reverse proxies, load balancers, and web servers. I've used it to serve static websites, configure SSL termination, handle redirects, and optimize performance with caching and compression. In Kubernetes environments, I've also worked with Ingress controllers using Nginx to route traffic efficiently.</br></br>
+                    <h4>Nginx Proxy Manager</h4>
+                    For simpler setups, I've used Nginx Proxy Manager to manage multiple services with an easy-to-use web interface. It simplifies setting up reverse proxy rules, SSL certificates, and domain management without manually editing config files. It's especially useful for smaller projects where ease of use is a priority.</br></br>
+                    <h4>Apache</h4>
+                    I've worked with Apache for hosting traditional web applications and setting up mod_rewrite rules, virtual hosts, and security configurations. While it's not my first choice over Nginx, I've configured it for applications that specifically require .htaccess rules, and I've helped developers troubleshoot deployments running inside containers or Kubernetes clusters.</br></br>
+                    
+                    Each of these tools has its strengths, and I've had hands-on experience configuring, managing, and optimizing them in different infrastructure setups.</p>
             </section>
         </div>
         

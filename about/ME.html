@@ -28,18 +28,22 @@
         <div id="main">
             <section id="one" class="inner">
                 <header class="major">
-                    <h2>Enterprise DevOps</h2>
+                    <h2>Monitoring</h2>
                 </header>
             </section>
 
             <section id="two" class="inner">
                 <header class="major">
-                    <h3>Managing large-scale GitHub Server</h3>
+                    <h3>Grafana, Loki and Node exporter</h3>
                 </header>
-                <p>My most significant project involved managing a GitHub Enterprise Server (GHES) hosted in Azure. The setup included two replicas, supporting over 1,100 repositories and more than 1,000 active developers spread across 10 organizations.</br></br>
-                Regular maintenance was critical, requiring frequent updates and security patches. Since our GHES instance was lagging behind a major version, we had to carefully upgrade it in incremental steps—applying 2-3 minor version updates at a time to mitigate the risk of breaking changes. To minimize disruption, all updates were executed over the weekend, ensuring developers experienced no downtime during work hours.</br></br>
-                Additionally, we undertook a large-scale migration of GHES to the cloud. This complex transition involved moving all repositories, developer accounts, and organizational structures while ensuring a seamless experience for users. Extensive planning and execution were key to making this migration smooth and efficient.
+                <p>Monitoring isn't just a checkbox; it's critical for maintaining system health. Grafana is my go-to for dashboards, paired with Loki for logs, Promtail for log shipping, and Node Exporter for system metrics. I've set up and managed full Grafana stacks as both containers and services. Setup is usually smooth—until enterprise firewall rules or UFW restrictions throw a wrench in the works.</br></br>
+                One of my biggest projects involved monitoring 30+ VMs, tracking storage, network usage, and even /tmp space (a must for Jenkins masters). Dashboards are easy to configure; it's all about what needs monitoring and how the client wants the data displayed. Deployment depends on the environment, but there's always a way to make it work.
                 </p>
+
+                <header class="major">
+                    <h3>Zabbix</h3>
+                </header>
+                <p>I first used this tool in my initial project. Since it was a small company with minimal monitoring needs, they weren't looking to invest heavily, so Zabbix was our middle-ground solution. While the tool itself wasn't difficult to use, the documentation was tricky to navigate, and the Web UI felt unintuitive at first. However, its flexibility—allowing custom shell commands and scripts for data queries directly on the agent host—made it a solid choice. For smaller projects with just a few monitoring sources (2-3 max), I'd recommend it. It's lightweight, and with a bit of reading, you can have it up and running in a day or two.</p>
             </section>
         </div>
         

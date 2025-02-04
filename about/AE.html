@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>About Me - Veselin Gizdov</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        <header id="header">
+            <a href="../index.html" class="logo"><strong>Start</strong></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+        
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li><a href="../work.html">Experience</a></li>
+                <li><a href="../skills.html">Skills</a></li>
+            </ul>
+        </nav>
+        
+        <div id="main">
+            <section id="one" class="inner">
+                <header class="major">
+                    <h2>Automation</h2>
+                </header>
+            </section>
+
+            <section id="two" class="inner">
+                <header class="major">
+                    <h3>Working with Terraform</h3>
+                </header>
+                <p><b>Terraform</b> was the primary tool I used for </b>Infrastructure as Code (IaC)</b> in my projects. I deployed infrastructures ranging from Kubernetes clusters on on-premise machines to full cloud environments in Azure and GCP. Leveraging Terraform workspaces for different environments, I streamlined deployments through both pipelines and manual execution as needed.</br></br>
+                My responsibilities included deploying and managing Kubernetes clusters, virtual machines, Docker containers, storage containers, databases, Databricks workspaces, Keycloak instances, and configuring various dependencies and applications. I also managed Azure network rules, private links, and more.</br></br>
+                All of this was accomplished with a single Terraform configuration, whether executed manually or automatically via pipelines. The setup only required a code editor, one or more Git repositories, and a storage solution for managing Terraform state.</br></br>
+                Biggest lesson from Terraform? terraform force-unlock... or the usual tricks—break the lease in Azure blobs or check the table in databases.
+                </p>
+
+                <header class="major">
+                    <h3>Ansible & Puppet</h3>
+                </header>
+                <p>I've worked extensively with both Ansible and Puppet, though Puppet was my primary choice for most projects. I've used it to set up dependencies, and manage services like the Grafana stack (both as containers and services).</br></br> My experience includes configuring Puppet masters, automating deployments through Azure DevOps pipelines and GitHub Actions, managing node exporters, and deploying Nginx/Apache services or containers. I've also handled tasks like creating self-signed certificates and streamlining various infrastructure management processes.
+                </p>
+
+                <header class="major">
+                    <h3>Azure DevOps</h3>
+                </header>
+                <p>Azure DevOps is my go-to CI/CD platform, offering a complete suite of tools in one place—tasks, pipelines, boards, and more. Setting up pipelines is a breeze with built-in templates and dependencies. You simply set up a virtual machine, connect it using a Service Principal (SP) or Managed Identity, install necessary dependencies (like Docker, if required), and then execute the pipeline. The platform provides full visibility into progress, results, and logs. You can easily integrate with registries such as JFrog or Azure Container Registries, and securely manage sensitive data by connecting to Azure Vaults—no need to manually handle keys or secrets.</br></br>
+                My experience with Azure DevOps includes setting up pipelines for a range of tasks. I've created pipelines that securely retrieve keys from Azure Vaults, start Databricks clusters, and trigger their internal workflows. I've also set up pipelines to build Docker images for web applications and deploy them to Azure Web Apps. Additionally, I've automated Terraform deployments, managed secret updates in Azure Vault, and packaged Python functions for publishing to a JFrog package registry. Once the functions are packaged, I deploy them to a Function App, ensuring everything runs smoothly and securely.
+                </p>
+
+                <header class="major">
+                    <h3>GitLab</h3>
+                </header>
+                <p>I have extensive experience using GitLab for CI/CD, and I'm confident enough to say I can automate just about anything with it—even making a lightbulb light up if needed.</br>I've built pipelines for deploying Terraform configurations, managing Kubernetes cluster deployments, and setting up umbrella Helm chart repositories.</br>I've also created pipelines for tasks like sending notifications, managing config maps, updating certificates, running Ansible playbooks, containerizing apps, and automating version updates and package tagging checks. In one project, I tailored pipelines to each developer's needs, ensuring custom behaviors for different users within an organization, created reusable helper functions, scripts, and jobs across repositories to streamline management and improve efficiency.</br>These multi-use tools make it easier to handle recurring tasks, ensuring consistency and reducing the need for redundant configurations across projects. Additionally, I've set up and managed GitLab registries, integrating them seamlessly into the GitLab ecosystem.</p>
+
+                <header class="major">
+                    <h3>GitHub Actions</h3>
+                </header>
+                <p>I've had extensive experience creating and managing GitHub Actions pipelines, ranging from executing Terraform code to deploying containerized applications. The platform is intuitive, with easy-to-setup runners and straightforward GitHub App configurations. I've also worked with environment variables and secrets management, seamlessly retrieving and configuring them within the pipelines for enhanced security and flexibility.</p>
+
+                <header class="major">
+                    <h3>Jenkins</h3>
+                </header>
+                <p>Ah, Jenkins… A tool that feels like it's from the Stone Age, where pipelines seem to be carved in stone. Unfortunately, I've had my share of wrestling with this relic and its smug face. I've created and managed pipelines for tasks like deploying containerized apps, handling database backups and restores, and even migrating Jenkins master instances (yes, it's as simple as copying the home folder, but still!). I've also connected GitHub repositories and deployed Config Maps for Kubernetes clusters. Despite its quirks, it gets the job done… somehow.</p>
+            </section>
+        </div>
+        
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Veselin Gizdov</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
